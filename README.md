@@ -6,3 +6,19 @@
 4) Once we know _why_ we need each element, think about how to implement the "Why" as a "How"
 5) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
 6) Think about how to validate each of your steps
+
+
+What is a Quiz?
+
+Announce the Quiz
+-How? alert()
+Check if user wants to take it
+-How?  confirm()
+Get the user's name
+-How? prompt()
+Ask Three questions
+-How? prompt()
+Score the Quiz
+-How? isYes()
+Display the results
+-How? textContent = input
