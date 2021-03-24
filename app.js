@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 
-import { isYes } from './test/utilities.js';
+import { answerYes } from './test/utilities.js';
 const result = document.getElementById('result');
 const button = document.getElementById('button');
 // initialize state
@@ -22,14 +22,17 @@ button.addEventListener('click', () => {
     const questionTwo = prompt('Does The Hamburger Kid have a horse named Pickles? (Yes or No)');
     const questionThree = prompt('If you are hungry, will Anpanman save you? (Yes or No)');
     
-    if (!isYes(questionOne)) score++;
+    if (!answerYes(questionOne)) score++;
     
-    if (isYes(questionTwo)) score++;
+    if (answerYes(questionTwo)) score++;
     
-    if (isYes(questionThree)) score++;
+    if (answerYes(questionThree)) score++;
     
+    alert('Look at the bottom of the page for your results!');
+    result.textContent = `Alright ${name}!  You got ${score} right out of three!`;
 
-    result.textContent = `Okay ${name} you got ${score} right out of three!`;
+    //if (score.value === 0);
+    //result.textContent = `Did you even read the page ${name}, you know nothing!`;
+    //result.classList.add('.failure');
 
 });
-// set event listeners to update state and DOM

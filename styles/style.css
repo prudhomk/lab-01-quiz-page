@@ -53,6 +53,7 @@ h2 {
     background-color: var(--international-orange-engineering);
     color: whitesmoke;
     border-radius: 6px;
+    padding: 5px;
 }
 
 button {
@@ -69,6 +70,7 @@ img {
     border-radius: 50%;
     width: 500px;
     height: 300px;
+    margin: 5px;
 }
 
 ul {
@@ -85,11 +87,49 @@ ol {
 }
 
 p {
-    border-
+    border-style: solid;
     border-image: url(../assets/Anpanlaugh.png) 30 round;
     font-family: patua;
 }
 
+.result {
+    display: flex;
+    background-color:brown;
+    color: whitesmoke;
+    width: 220px;
+    height: 50px;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.success {
+    display: flex;
+    background-color:pink;
+    color: whitesmoke;
+    width: 220px;
+    height: 50px;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.failure {
+    display: flex;
+    background-color:var(--black-olive);
+    color: whitesmoke;
+    width: 220px;
+    height: 50px;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
 content {
     width: 80%;
 }
