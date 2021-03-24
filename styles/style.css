@@ -2,9 +2,11 @@
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
    /* CSS HEX */
---black-olive: #3b3b2bff;
---international-orange-engineering: #bc2c1aff;
---orange-yellow-crayola: #fbcf60ff;
+--black-olive: hsla(60, 16%, 20%, 1);
+--international-orange-engineering: hsla(7, 76%, 42%, 1);
+--orange-yellow-crayola: hsla(43, 95%, 68%, 1);
+
+background-color: var(--orange-yellow-crayola);
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -16,10 +18,13 @@ body {
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
 }
+
+@font-face {
+    font-family: Patua;
+    src: url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+    background-color: var(--color2);
+    }
 
 main {
     display: flex;
@@ -37,23 +42,17 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 2px var(--color1);
     
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
-    padding: 10px;
-    margin: 0;
+    margin: 10px;
+    background-color: var(--international-orange-engineering);
+    color: whitesmoke;
+    border-radius: 6px;
 }
 
 button {
@@ -61,16 +60,35 @@ button {
 }
 
 img {
-    border-style: wavy;
     border-radius: 50%;
-    border-
+    width: 300px;
+    height: 300px;
+}
+
+.group-photo {
+    border-radius: 50%;
+    width: 500px;
+    height: 300px;
 }
 
 ul {
+    list-style-type: circle;
     margin-top: 10px;
     padding: 0;
 }
 
+ol {
+    list-style-type: decimal;
+    margin: 10px;
+    padding: 0;
+
+}
+
+p {
+    border-
+    border-image: url(../assets/Anpanlaugh.png) 30 round;
+    font-family: patua;
+}
 
 content {
     width: 80%;
