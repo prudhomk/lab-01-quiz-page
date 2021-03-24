@@ -95,7 +95,7 @@ p {
 .result {
     display: flex;
     background-color:brown;
-    color: whitesmoke;
+    color: black;
     width: 220px;
     height: 50px;
     border-radius: 7px;
@@ -103,12 +103,14 @@ p {
     padding: 0;
     text-align: center;
     align-items: center;
+    display: none;
+    
 }
 
 .success {
     display: flex;
     background-color:pink;
-    color: whitesmoke;
+    color: black;
     width: 220px;
     height: 50px;
     border-radius: 7px;
@@ -130,10 +132,15 @@ p {
     text-align: center;
     align-items: center;
 }
+
 content {
     width: 80%;
 }
 
+.visible {
+    display: block;
+}
 
-
- 
+.hidden {
+    display: none;
+}
