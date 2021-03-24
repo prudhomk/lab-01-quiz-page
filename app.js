@@ -30,9 +30,16 @@ button.addEventListener('click', () => {
     
     alert('Look at the bottom of the page for your results!');
     result.textContent = `Alright ${name}!  You got ${score} right out of three!`;
+    result.style.background = 'pink';
+    result.style.color = 'black';
+    result.classList.toggle('visible');
 
-    //if (score.value === 0);
-    //result.textContent = `Did you even read the page ${name}, you know nothing!`;
-    //result.classList.add('.failure');
+    if (score === 0) {
+        result.textContent = `Did you even read the page ${name}, you know nothing!`;
+        //result.classList.add('.failure');
+        result.style.background = 'black';
+        result.style.color = 'whitesmoke';
+        result.classList.toggle('visible');
 
+    }
 });
