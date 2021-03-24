@@ -19,6 +19,6 @@ Get the user's name
 Ask Three questions
 -How? prompt()
 Score the Quiz
--How? isYes()
+-How? answerYes()
 Display the results
 -How? textContent = input
